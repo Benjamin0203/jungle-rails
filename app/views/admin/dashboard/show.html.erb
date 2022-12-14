@@ -1,4 +1,29 @@
-<h1>Admin::Dashboard#show</h1>
+<div class="alert alert-success d-flex justify-content-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+  <div class="display-6 h3">
+    Dashboard
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product Count</th>
+      <th scope="col">Category Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= @product_count %></th>
+      <th scope="row"><%= @category_count %></th>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+<%= link_to 'All Products', [:admin, :products], class: 'btn btn-info' %>
+</div>
+
+
 <p>Find me in app/views/admin/dashboard/show.html.erb</p>
-<p>Product Count: <%= @product_count %> </p>
-<p>Category Count: <%= @category_count %> </p>
+<p>Admin::Dashboard#show</p>
