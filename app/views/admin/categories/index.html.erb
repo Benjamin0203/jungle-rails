@@ -1,9 +1,15 @@
 
 <section class="admin-products-index">
 
-  <header class="page-header">
+  <%# <header class="page-header">
     <h1>Admin &raquo; All Categories</h1>
-  </header>
+  </header> %>
+  <div class="alert alert-success" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+  <div class="display-6 h3">
+   Admin &raquo; All Categories
+  </div>
+ </div>
 
   <div class="well">
     <%= link_to '+ New Categories', [:new, :admin, :category], class: 'btn btn-info' %>
