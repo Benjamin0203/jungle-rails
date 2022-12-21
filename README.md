@@ -1,6 +1,9 @@
 # Jungle
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+## Note
+- admin username: Jungle
+- admin password: book
 
 ## Setup
 
@@ -11,7 +14,8 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 5. Create .env file based on .env.example
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
-8. Run `bin/rails s -b 0.0.0.0` to start the server
+8. Run `bin/rails server` to start the server
+9. Run `bin/rails cypress:open` to start Cypress testing
 
 ## Database
 
