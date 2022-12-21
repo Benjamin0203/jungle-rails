@@ -1,4 +1,4 @@
-describe('visit the home page', () => {
+describe('users can navigate from the home page to the product detail page by clicking on a product.', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
   })
@@ -12,9 +12,5 @@ describe('visit the home page', () => {
   cy.get(".product-detail img").should("have.attr", "src", "/uploads/product/image/12/plante_12.jpg");
   cy.get(".product-detail .quantity").should("have.text", "\n        23 in stock at \n        $79.99\n      ");
   cy.get(".product-detail .button_to").should("have.text", "\n           Add\n");
-
   });
-
-
-  
 })
