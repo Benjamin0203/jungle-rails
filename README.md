@@ -17,6 +17,22 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 8. Run `bin/rails server` to start the server
 9. Run `bin/rails cypress:open` to start Cypress testing
 
+## Showcase
+
+
+![main page](./screenshots/mainpage1.png)
+
+---
+![Sign up](./screenshots/Singuppage.png)
+
+---
+![login](./screenshots/loginpage1.png)
+
+---
+![cart](./screenshots/cart1.png)
+
+---
+![admin dashboard](./screenshots/adminDashboard1.png)
 ## Database
 
 If Rails is complaining about authentication to the database, uncomment the user and password fields from `config/database.yml` in the development and test sections, and replace if necessary the user and password `development` to an existing database user.
